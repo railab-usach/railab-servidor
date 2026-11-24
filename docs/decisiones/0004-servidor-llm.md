@@ -29,7 +29,7 @@ No es un servicio pagado. Ollama y llama.cpp exponen en la red del lab una inter
 ## Decisión
 - **Ollama** como servidor de modelos, con el modo «thinking» apagado para conversar.
 - Todo cliente usa la **API estándar**, nunca la API propia de Ollama.
-- El modelo se elige con una medición (reto de la etapa E0) entre `qwen3.5:2b`, `qwen3.5:4b`, `gemma4:e2b`, `gemma4:e4b` y `llama3.2:3b` (los cinco nombres existen en la biblioteca de Ollama al 24 nov).
+- El modelo se elige con una medición (reto de la etapa E0) entre `qwen3.5:2b`, `qwen3.5:4b`, `gemma4:e2b`, `gemma4:e4b`, `llama3.2:3b` y, desde la [revisión de arquitectura](https://github.com/railab-usach/inmoov-cabeza/blob/main/docs/revision-arquitectura.md), `lfm2`, `granite4` y `ministral-3`, que están hechos para correr en CPU. Los ocho nombres existen en la biblioteca de Ollama al 24 nov. La licencia de LFM2 no es Apache: hay que revisarla antes de fijarlo.
 
 ## Por qué Ollama y no llama.cpp directo
 Ollama usa por dentro el mismo motor de llama.cpp. norea-node ya corre Ollama (en Docker, con `qwen3.5:4b`), así que en los dos equipos se usarían los mismos nombres de modelo y una sola herramienta que aprender. La duda real es el Xeon sin AVX2: un `llama-server` compilado en esa misma máquina (`-march=native`) podría rendir más que los binarios genéricos de Ollama (**no verificado**). Como el cliente solo conoce la API estándar, cambiar de motor no toca el código. Por eso el reto E0-4 mide **los dos motores** con el mismo modelo, y si llama.cpp gana por más de un 20 %, se reemplaza Ollama en un ADR nuevo.
