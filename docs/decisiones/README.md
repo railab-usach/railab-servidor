@@ -16,6 +16,7 @@ Cada decisión de arquitectura queda en un archivo numerado. La regla: **nada se
 | [0005](0005-orquestacion-cluster.md) | systemd + `uv` ahora; el clúster se decide midiendo cuando haya 2 nodos | propuesta |
 | [0006](0006-repositorios-y-licencia.md) | Dos repos públicos con docs en Obsidian; MIT y CC BY-SA 4.0 | propuesta |
 | [0007](0007-plataforma-de-comunicacion.md) | Zulip Cloud en vez de WhatsApp, con patrocinio gratis y un bot de lectura para Claude | pospuesta hasta tener UPS |
+| [0008](0008-configuracion-github.md) | Configuración de la organización en GitHub: permisos, main protegida, seguridad y perfil | aceptada (26 nov) |
 
 ## Cómo proponer una decisión
 1. Copia la [plantilla](0000-plantilla.md) con el número siguiente.
