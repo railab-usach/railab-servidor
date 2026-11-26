@@ -84,7 +84,7 @@ flowchart LR
 - **Viene de:** [ADR-0003 de inmoov-cabeza](https://github.com/railab-usach/inmoov-cabeza/blob/main/docs/decisiones/0003-mensajeria.md). **Tarea:** S-05.
 
 ### RS-07 Modelo de lenguaje por la API estándar
-- **Qué:** cualquier proyecto le pregunta al modelo de lenguaje con el formato estándar (`POST /v1/chat/completions`), sin saber qué motor ni qué equipo hay detrás.
+- **Qué:** cualquier proyecto le pregunta al modelo de lenguaje con el formato estándar (`POST /v1/chat/completions`), sin saber qué motor ni qué equipo hay detrás. Puede ser el Xeon de `hp-node-01` o la GTX 1060 de norea-node por Tailscale, aunque norea siga fuera del lab: cambiar de equipo es cambiar `LLM_BASE_URL`.
 - **Se cumple cuando:**
   1. `curl` a `http://hp-node-01:11434/v1/chat/completions` con el modelo elegido devuelve una respuesta.
   2. Hay una tabla en la bitácora con los 8 modelos medidos: tiempo hasta el primer token, tokens por segundo y calidad en 10 preguntas en español.

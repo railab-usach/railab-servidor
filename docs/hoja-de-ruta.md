@@ -40,7 +40,7 @@ flowchart LR
 | S-08 | SSH sin claves y `railab` sin inicio de sesión | RS-01, RS-09 | S-02 hecha por 2 personas | ★ |
 
 ## SH2 · Servicios base para los proyectos
-**Para qué:** dejar los servicios que usan el InMoov y los demás proyectos (mensajería y modelo de lenguaje), instalados de forma que se puedan rearmar.
+**Para qué:** dejar los servicios que usan el InMoov y los demás proyectos (mensajería y modelo de lenguaje), instalados de forma que se puedan rearmar. El servidor está siempre encendido y se alcanza por Tailscale desde cualquier lugar, también desde una feria: por eso [RS-05](requisitos.md#rs-05-vuelve-solo-después-de-un-corte-de-luz) va primero.
 **Termina cuando:** se cumplen [RS-06](requisitos.md#rs-06-mensajería-mqtt-para-los-proyectos), [RS-07](requisitos.md#rs-07-modelo-de-lenguaje-por-la-api-estándar) y [RS-08](requisitos.md#rs-08-se-puede-rearmar-desde-cero).
 **Decisiones:** [ADR-0004](decisiones/0004-servidor-llm.md) y el [ADR-0003 de inmoov-cabeza](https://github.com/railab-usach/inmoov-cabeza/blob/main/docs/decisiones/0003-mensajeria.md).
 
@@ -50,6 +50,7 @@ flowchart LR
 | S-06 | Guía «Conectarte a la red del lab» | RS-08 | S-01 | ★ |
 | S-09 | Etiquetas `tag:servidor` y `tag:robot` y una ACL mínima en Tailscale | RS-02, RS-09 | S-01 | ★★★ · por pautar |
 | S-10 | Medición de 8 modelos de lenguaje (reto E0-4) y el elegido por la API estándar | RS-07 | S-04 | ★★ · por pautar: falta `herramientas/bench_llm.py` |
+| Compartir norea-node con la tailnet del lab | Su GPU (GTX 1060) se usa por Tailscale para probar el LLM desde ya, aunque siga fuera del lab | RS-07 | — | Camilo |
 
 ## SH3 · Clúster (más adelante)
 Con dos fuentes para los otros Z420 (unos $100.000 en total) se mide k3s contra Swarm y se decide en un ADR nuevo ([ADR-0005](decisiones/0005-orquestacion-cluster.md)). Hasta entonces no hay tareas.
