@@ -52,7 +52,7 @@ Hoy el InMoov y el servidor los trabajan **dos personas que aprenden** (Emilio y
 |---|---|---|
 | **Aprendizaje cognitivo, asíncrono** | Camilo no da clases: deja cada tarea pautada en el tablero con un ejemplo resuelto, el porqué y cómo verificarla. El acompañamiento va como comentarios en el issue y revisión del PR; cada tarea nueva trae menos pauta | Camilo tiene poco tiempo y va menos al lab que ellos; la revisión por escrito queda guardada y sirve para el siguiente |
 | **Trabajo en pareja** | Emilio y Balter hacen misiones juntos: uno maneja (teclado o cautín) y el otro guía y revisa, y se turnan. Al principio maneja quien sabe menos | Balter recién parte con git y Emilio ya trabajó con ESP32 y PCA9685; así Emilio afianza enseñando y Balter no queda solo |
-| **Tablero kanban** en GitHub Projects | Cuatro columnas: por hacer, en curso, en revisión y listo, con **una tarea en curso por persona** | Es gratis y está junto al código; la regla de una tarea evita dejar diez cosas a medias |
+| **Tablero kanban** en [GitHub Projects](https://github.com/orgs/railab-usach/projects/1) (decisión de Camilo, 26 nov 2026: todo en GitHub, para no sumar cuentas ni herramientas y porque saber usar GitHub completo sirve a futuro) | Cuatro columnas: por hacer, en curso, en revisión y listo, con **una tarea en curso por persona** | Es gratis y está junto al código; la regla de una tarea evita dejar diez cosas a medias |
 | **Revisión de 15 minutos** cada semana | Qué terminé, qué me traba y qué tomo ahora | Mantiene el ritmo sin quitar tiempo; en un lab voluntario, más reuniones desaniman |
 | **Demo interna al mes** | Cada uno muestra lo que hizo a Vicente y al grupo | Hace visible el avance y sirve de ensayo para las ferias |
 
