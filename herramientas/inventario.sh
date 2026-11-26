@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # Solo lectura: specs del servidor del RAI Lab (sin sudo, sin cambios)
 echo "=== SO ==="; cat /etc/os-release | grep -E '^(PRETTY_NAME|VERSION_ID)='; uname -r; uptime
 echo "=== CPU ==="; lscpu | grep -E 'Model name|^CPU\(s\)|Thread|Core|Socket|MHz|L3|Flags' | sed 's/Flags:.*/&/' | cut -c1-200
