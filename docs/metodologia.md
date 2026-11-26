@@ -26,7 +26,7 @@ Uno parte donde se sienta cómodo y sube cuando quiere. Nadie queda fuera por sa
 
 | Nivel | Qué haces | Qué recibes hecho | Ejemplo | Lo que aprendes |
 |---|---|---|---|---|
-| **1 · Misión de lab** ★ | Vas al lab y sigues una guía paso a paso: montar, conectar, verificar y dejar una foto | Diagrama, lista de materiales, pasos y cómo verificar | Montar el bus de servos ([misión M-01](https://github.com/railab-usach/inmoov-cabeza/blob/main/docs/misiones/M-01-bus-de-servos.md)) | Electrónica práctica, seguridad, orden |
+| **1 · Misión de lab** ★ | Vas al lab y sigues una guía paso a paso: montar, conectar, verificar y dejar una foto | Diagrama, lista de materiales, pasos y cómo verificar | Pasar el cuello al segundo PCA ([misión M-01](https://github.com/railab-usach/inmoov-cabeza/blob/main/docs/misiones/M-01-cuello-al-pca.md)) | Electrónica práctica, seguridad, orden |
 | **2 · Prueba** ★★ | Corres un script que ya existe, mides y llenas una tabla | Script, tabla vacía y criterio de éxito | Medir 8 modelos de lenguaje en el servidor (E0-4) | Medir con método, Linux, comparar opciones |
 | **3 · Componente** ★★★ | Programas una pieza dentro de bordes ya definidos | Especificación, interfaz (mensajes de entrada y salida), pruebas que debe pasar y CI | Firmware que recibe poses por serial y mueve 20 servos (E1-1) | Diseño, programación, trabajo con pruebas |
 
