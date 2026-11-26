@@ -19,7 +19,7 @@ El RAI Lab lo mueven sus propios estudiantes. No hay notas ni sueldo, así que l
 6. **Si no está escrito, no existe.** Lo que se aprende va a la bitácora del repo, para quien llegue después y para que el InMoov lo pueda contar (sección 6).
 
 7. **El andamio se retira.** Si quien coordina diseña todo para siempre, los demás solo arman y nunca aprenden a decidir. Cada vez que alguien termina una pieza, la siguiente le deja más decisiones a él: primero sigue una especificación, después la completa y al final escribe su propio ADR.
-8. **Nadie trabaja solo.** Se trabaja en parejas, y quien ya hizo una misión acompaña a quien la hace por primera vez. Sentirse parte del grupo motiva más que la tarea en sí.
+8. **Nadie queda solo.** Cada uno toma su tarea, pero las dudas se escriben en el issue y alguien las responde por escrito. Quien ya hizo una tarea revisa o acompaña a quien hace la siguiente. Sentirse parte del grupo motiva más que la tarea en sí.
 
 ## 2. Tres niveles de participación
 Uno parte donde se sienta cómodo y sube cuando quiere. Nadie queda fuera por saber poco.
@@ -35,7 +35,7 @@ Dentro de su componente, el dueño decide cómo hacerlo: la especificación fija
 Un componente está **terminado** cuando pasa sus pruebas, el CI está en verde, tiene su página en la documentación y su dueño lo puede explicar en dos minutos.
 
 ## 3. Cómo se arma una misión de lab
-Las misiones las escribe quien coordina, con la [plantilla](https://github.com/railab-usach/inmoov-cabeza/blob/main/docs/misiones/README.md). Cada una trae:
+Las misiones las escribe quien coordina, con la [plantilla](https://github.com/railab-usach/inmoov-cabeza/blob/main/docs/misiones/README.md). Cada una nombra el **hito** de la hoja de ruta al que aporta y los **requisitos** que cumple ([requisitos del servidor](requisitos.md) · [requisitos del InMoov](https://github.com/railab-usach/inmoov-cabeza/blob/main/docs/requisitos.md)): así quien la toma sabe para qué sirve y qué tiene que cumplir. Además trae:
 - **Objetivo** en una frase y **por qué importa** para el proyecto.
 - **Materiales** con su ubicación en el lab.
 - **Diagrama** de conexiones.
@@ -51,7 +51,7 @@ Hoy el InMoov y el servidor los trabajan **dos personas que aprenden** (Emilio y
 | Pieza | Qué es | Por qué para nosotros |
 |---|---|---|
 | **Aprendizaje cognitivo, asíncrono** | Camilo no da clases: deja cada tarea pautada en el tablero con un ejemplo resuelto, el porqué y cómo verificarla. El acompañamiento va como comentarios en el issue y revisión del PR; cada tarea nueva trae menos pauta | Camilo tiene poco tiempo y va menos al lab que ellos; la revisión por escrito queda guardada y sirve para el siguiente |
-| **Trabajo en pareja** | Emilio y Balter hacen misiones juntos: uno maneja (teclado o cautín) y el otro guía y revisa, y se turnan. Al principio maneja quien sabe menos | Balter recién parte con git y Emilio ya trabajó con ESP32 y PCA9685; así Emilio afianza enseñando y Balter no queda solo |
+| **Dudas en el issue** | Cada uno toma una tarea; las dudas van como comentario en su issue y Camilo (u otro integrante) responde por escrito. Quien terminó una tarea puede revisar la del otro | Somos muy pocos para armar parejas fijas (corrección del 26 nov 2026); la respuesta escrita le sirve también al siguiente |
 | **Tablero kanban** en [GitHub Projects](https://github.com/orgs/railab-usach/projects/1) (decisión de Camilo, 26 nov 2026: todo en GitHub, para no sumar cuentas ni herramientas y porque saber usar GitHub completo sirve a futuro) | Cuatro columnas: por hacer, en curso, en revisión y listo, con **una tarea en curso por persona** | Es gratis y está junto al código; la regla de una tarea evita dejar diez cosas a medias |
 | **Revisión de 15 minutos** cada semana | Qué terminé, qué me traba y qué tomo ahora | Mantiene el ritmo sin quitar tiempo; en un lab voluntario, más reuniones desaniman |
 | **Demo interna al mes** | Cada uno muestra lo que hizo a Vicente y al grupo | Hace visible el avance y sirve de ensayo para las ferias |
@@ -93,7 +93,7 @@ Cada archivo lleva en su encabezado `nivel: publico` o `nivel: tecnico`, para qu
 | Andamiaje y niveles | *Aprendizaje cognitivo* (Collins, Brown y Newman, 1989): modelar, guiar, andamiar y **retirar el andamio**, más articular y reflexionar | Se agregó el principio 7 (retirar el andamio) y la reflexión en la bitácora; una revisión de 2024 nota que en STEM suele faltar justamente eso ([SIGCSE](https://par.nsf.gov//servlets/purl/10491208)) |
 | Partir por tareas periféricas reales | *Participación periférica legítima* (Lave y Wenger, 1991), estudiada en comunidades de software libre ([Gasson y Purcell](https://core.ac.uk/download/301374706.pdf)) | Las misiones son trabajo real del proyecto, no ejercicios |
 | Primera tarea y la siguiente | Estudios de recién llegados al software libre: muchos se van por barreras al entrar o justo tras su primer aporte; la primera tarea debe enganchar, no solo ser fácil ([Steinmacher et al.](https://www.ime.usp.br/~gerosa/papers/IST_SysReview_PrePrint.pdf), [Hao et al. 2026](https://arxiv.org/abs/2603.27136v1)) | Siguiente tarea lista al terminar; documentación clara para elegir |
-| Motivación | *Teoría de la autodeterminación*: autonomía, competencia y pertenencia. En robótica, la autonomía y la competencia percibidas predicen la motivación ([Huang, NCSU](https://repository.lib.ncsu.edu/server/api/core/bitstreams/700306c1-fc7a-4fdb-abef-6542c2e92613/content)); en ingeniería, la pertenencia pesó más ([estudio con makerspaces](https://par.nsf.gov//servlets/purl/10356950)) | El dueño decide el *cómo*; trabajo en parejas (principio 8) |
+| Motivación | *Teoría de la autodeterminación*: autonomía, competencia y pertenencia. En robótica, la autonomía y la competencia percibidas predicen la motivación ([Huang, NCSU](https://repository.lib.ncsu.edu/server/api/core/bitstreams/700306c1-fc7a-4fdb-abef-6542c2e92613/content)); en ingeniería, la pertenencia pesó más ([estudio con makerspaces](https://par.nsf.gov//servlets/purl/10356950)) | El dueño decide el *cómo*; nadie queda solo (principio 8) |
 | Equipos que duran años | *Vertically Integrated Projects* (Purdue y otras): equipos de varios años, los antiguos guían a los nuevos y asumen el liderazgo al irse los mayores ([Memphis](https://par.nsf.gov//servlets/purl/10464438)) | Quien ya hizo una misión acompaña al siguiente; pensar en quién sigue cuando Vicente o Camilo egresen |
 
 La evidencia viene casi toda de universidades de EE. UU. y de estudios sin grupo de control: sirve de guía, no de garantía.

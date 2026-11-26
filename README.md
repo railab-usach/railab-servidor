@@ -6,6 +6,9 @@ Infraestructura de cómputo del **RAI Lab** (Usach Robotics and AI Laboratory, D
 > Estado (24 nov 2026): diseño y auditoría. Las decisiones están como «propuesta» hasta validarlas en reunión. Este repo parte del README que escribió Balter Riquelme en `Servidor-RAILAB`.
 
 ## Empieza aquí
+- [Hoja de ruta](docs/hoja-de-ruta.md): el hito activo es **SH1 · Servidor seguro y que vuelve solo**.
+- [Requisitos](docs/requisitos.md): qué tiene que cumplir el servidor, con la prueba de cada cosa.
+- [Tablero de tareas](https://github.com/orgs/railab-usach/projects/1).
 - [Documentación](docs/README.md)
 - [Decisiones (ADR)](docs/decisiones/README.md)
 - [Ficha de hp-node-01](docs/hardware/hp-node-01.md)
