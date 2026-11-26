@@ -6,6 +6,8 @@ nivel: publico
 ---
 # Cómo trabajamos en el RAI Lab
 
+> **Estado: borrador para discutir con Vicente y el equipo.** Lo escribió un estudiante, no un profesor. Las ideas se contrastaron con la literatura de la sección 7, pero no se han probado en el lab.
+
 El RAI Lab lo mueven sus propios estudiantes. No hay notas ni sueldo, así que lo que más escasea no es la plata ni las herramientas: es la **motivación**. Este documento ordena el trabajo para que cada integrante, sepa lo que sepa, termine algo que funciona, se vea y pueda mostrar con orgullo.
 
 ## 1. Filosofía
@@ -16,6 +18,9 @@ El RAI Lab lo mueven sus propios estudiantes. No hay notas ni sueldo, así que l
 5. **Las mejores herramientas gratis.** Antes de usar algo, se compara con las alternativas y se anota la elección en un ADR. Que algo ya esté hecho no basta para mantenerlo.
 6. **Si no está escrito, no existe.** Lo que se aprende va a la bitácora del repo, para quien llegue después y para que el InMoov lo pueda contar (sección 6).
 
+7. **El andamio se retira.** Si quien coordina diseña todo para siempre, los demás solo arman y nunca aprenden a decidir. Cada vez que alguien termina una pieza, la siguiente le deja más decisiones a él: primero sigue una especificación, después la completa y al final escribe su propio ADR.
+8. **Nadie trabaja solo.** Se trabaja en parejas, y quien ya hizo una misión acompaña a quien la hace por primera vez. Sentirse parte del grupo motiva más que la tarea en sí.
+
 ## 2. Tres niveles de participación
 Uno parte donde se sienta cómodo y sube cuando quiere. Nadie queda fuera por saber poco.
 
@@ -24,6 +29,8 @@ Uno parte donde se sienta cómodo y sube cuando quiere. Nadie queda fuera por sa
 | **1 · Misión de lab** ★ | Vas al lab y sigues una guía paso a paso: montar, conectar, verificar y dejar una foto | Diagrama, lista de materiales, pasos y cómo verificar | Montar el bus de servos ([misión M-01](https://github.com/railab-usach/inmoov-cabeza/blob/main/docs/misiones/M-01-bus-de-servos.md)) | Electrónica práctica, seguridad, orden |
 | **2 · Prueba** ★★ | Corres un script que ya existe, mides y llenas una tabla | Script, tabla vacía y criterio de éxito | Medir 8 modelos de lenguaje en el servidor (E0-4) | Medir con método, Linux, comparar opciones |
 | **3 · Componente** ★★★ | Programas una pieza dentro de bordes ya definidos | Especificación, interfaz (mensajes de entrada y salida), pruebas que debe pasar y CI | Firmware que recibe poses por serial y mueve 20 servos (E1-1) | Diseño, programación, trabajo con pruebas |
+
+Dentro de su componente, el dueño decide cómo hacerlo: la especificación fija **qué** debe cumplir, no **cómo**. Cuando termina, ya tiene lista la siguiente tarea para elegir (la gente suele irse justo después de su primer aporte si no ve qué sigue), y escribe en la bitácora qué decidió y por qué (reflexión).
 
 Un componente está **terminado** cuando pasa sus pruebas, el CI está en verde, tiene su página en la documentación y su dueño lo puede explicar en dos minutos.
 
@@ -66,5 +73,16 @@ La meta es que el InMoov responda preguntas sobre los proyectos del lab, tanto a
 | `docs/bitacora/` | Técnicos | Lo medido y aprendido, con fecha |
 
 Cada archivo lleva en su encabezado `nivel: publico` o `nivel: tecnico`, para que el InMoov elija cómo responder según quién pregunta. Nunca van claves, IPs ni datos personales: todo lo que esté en el baúl puede terminar dicho en voz alta en una feria.
+
+## 7. En qué se basa
+| Idea de este documento | De dónde viene | Qué ajustó |
+|---|---|---|
+| Andamiaje y niveles | *Aprendizaje cognitivo* (Collins, Brown y Newman, 1989): modelar, guiar, andamiar y **retirar el andamio**, más articular y reflexionar | Se agregó el principio 7 (retirar el andamio) y la reflexión en la bitácora; una revisión de 2024 nota que en STEM suele faltar justamente eso ([SIGCSE](https://par.nsf.gov//servlets/purl/10491208)) |
+| Partir por tareas periféricas reales | *Participación periférica legítima* (Lave y Wenger, 1991), estudiada en comunidades de software libre ([Gasson y Purcell](https://core.ac.uk/download/301374706.pdf)) | Las misiones son trabajo real del proyecto, no ejercicios |
+| Primera tarea y la siguiente | Estudios de recién llegados al software libre: muchos se van por barreras al entrar o justo tras su primer aporte; la primera tarea debe enganchar, no solo ser fácil ([Steinmacher et al.](https://www.ime.usp.br/~gerosa/papers/IST_SysReview_PrePrint.pdf), [Hao et al. 2026](https://arxiv.org/abs/2603.27136v1)) | Siguiente tarea lista al terminar; documentación clara para elegir |
+| Motivación | *Teoría de la autodeterminación*: autonomía, competencia y pertenencia. En robótica, la autonomía y la competencia percibidas predicen la motivación ([Huang, NCSU](https://repository.lib.ncsu.edu/server/api/core/bitstreams/700306c1-fc7a-4fdb-abef-6542c2e92613/content)); en ingeniería, la pertenencia pesó más ([estudio con makerspaces](https://par.nsf.gov//servlets/purl/10356950)) | El dueño decide el *cómo*; trabajo en parejas (principio 8) |
+| Equipos que duran años | *Vertically Integrated Projects* (Purdue y otras): equipos de varios años, los antiguos guían a los nuevos y asumen el liderazgo al irse los mayores ([Memphis](https://par.nsf.gov//servlets/purl/10464438)) | Quien ya hizo una misión acompaña al siguiente; pensar en quién sigue cuando Vicente o Camilo egresen |
+
+La evidencia viene casi toda de universidades de EE. UU. y de estudios sin grupo de control: sirve de guía, no de garantía.
 
 Up: [documentación](README.md)
