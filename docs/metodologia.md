@@ -6,7 +6,7 @@ nivel: publico
 ---
 # Cómo trabajamos en el RAI Lab
 
-> **Estado: borrador para discutir con Vicente y el equipo.** Lo escribió un estudiante, no un profesor. Las ideas se contrastaron con la literatura de la sección 8, pero no se han probado en el lab.
+> **Estado: borrador para discutir con Vicente y el equipo (propuesto por WhatsApp el 26 nov 2026, con opciones).** Lo escribió un estudiante, no un profesor. Las ideas se contrastaron con la literatura de la sección 8, pero no se han probado en el lab.
 
 El RAI Lab lo mueven sus propios estudiantes. No hay notas ni sueldo, así que lo que más escasea no es la plata ni las herramientas: es la **motivación**. Este documento ordena el trabajo para que cada integrante, sepa lo que sepa, termine algo que funciona, se vea y pueda mostrar con orgullo.
 
@@ -50,7 +50,7 @@ Hoy el InMoov y el servidor los trabajan **dos personas que aprenden** (Emilio y
 
 | Pieza | Qué es | Por qué para nosotros |
 |---|---|---|
-| **Aprendizaje cognitivo** como base | Camilo hace la primera vez y explica por qué, después lo hacen juntos y al final solos | Hay una gran diferencia de experiencia; con dos aprendices se puede acompañar a cada uno |
+| **Aprendizaje cognitivo, asíncrono** | Camilo no da clases: deja cada tarea pautada en el tablero con un ejemplo resuelto, el porqué y cómo verificarla. El acompañamiento va como comentarios en el issue y revisión del PR; cada tarea nueva trae menos pauta | Camilo tiene poco tiempo y va menos al lab que ellos; la revisión por escrito queda guardada y sirve para el siguiente |
 | **Trabajo en pareja** | Emilio y Balter hacen misiones juntos: uno maneja (teclado o cautín) y el otro guía y revisa, y se turnan. Al principio maneja quien sabe menos | Balter recién parte con git y Emilio ya trabajó con ESP32 y PCA9685; así Emilio afianza enseñando y Balter no queda solo |
 | **Tablero kanban** en GitHub Projects | Cuatro columnas: por hacer, en curso, en revisión y listo, con **una tarea en curso por persona** | Es gratis y está junto al código; la regla de una tarea evita dejar diez cosas a medias |
 | **Revisión de 15 minutos** cada semana | Qué terminé, qué me traba y qué tomo ahora | Mantiene el ritmo sin quitar tiempo; en un lab voluntario, más reuniones desaniman |
