@@ -60,7 +60,7 @@ Hoy el InMoov y el servidor los trabajan **dos personas que aprenden** (Emilio y
 
 ## 5. Ritmo
 - **Coordinación:** el grupo de WhatsApp para avisos y un issue de GitHub por misión o reto, donde queda la discusión técnica. Zulip quedó en pausa hasta tener UPS ([guía](guias/zulip.md)).
-- **Reunión corta** cada dos semanas por Discord, de 20 minutos: qué se terminó, qué se traba y qué misiones hay disponibles. No es para rendir cuentas.
+- **Revisión semanal** de 15 minutos, en el lab o por Discord (sección 4). No es para rendir cuentas.
 - **Reconocimiento:** cada cosa terminada se anuncia en el grupo con el nombre de quien la hizo y queda en la bitácora y en el README. Lo que se puede mostrar va a Instagram.
 
 ## 6. Ferias y demostraciones
