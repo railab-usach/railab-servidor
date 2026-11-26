@@ -5,7 +5,7 @@ tags: [guia, comunicacion, zulip]
 ---
 # Zulip del lab: cómo se ordena y cómo se pone en marcha
 
-Aplica [ADR-0007](../decisiones/0007-plataforma-de-comunicacion.md), que sigue en «propuesta» hasta la reunión de validación. Esta guía dice qué canales hay y cómo se arma, para que el día que se acepte se haga en una tarde.
+Aplica [ADR-0007](../decisiones/0007-plataforma-de-comunicacion.md), aceptado el 26 nov 2026. **Parte con el grupo del servidor e InMoov**; los demás proyectos se suman cuando quieran, sin obligación. WhatsApp sigue para lo social y las urgencias.
 
 ## Qué cambia frente a WhatsApp
 En WhatsApp todo cae en un solo hilo: la llave de la sala, la RAM del servidor, la IA que se usa y los stickers. En Zulip cada mensaje va a un **canal** (el área) y a un **tema** (la conversación puntual). Se lee solo lo que te toca y cada tema queda como un registro que se puede enlazar desde un issue o un ADR.

@@ -10,6 +10,7 @@ Este `docs/` es un vault de Obsidian y también se lee en GitHub: los enlaces so
 ## Secciones
 - [Decisiones (ADR)](decisiones/README.md): qué se decidió, por qué y qué falta validar. Léelo antes de cambiar algo del servidor.
 - [Hardware](hardware/hp-node-01.md): la ficha de `hp-node-01` y de los otros Z420.
+- [Cómo trabajamos](metodologia.md): filosofía, niveles de participación, ferias y el baúl que lee el InMoov.
 - [Guías](guias/README.md): tareas paso a paso para quien llega al lab.
 - [Bitácora](bitacora/README.md): qué se hizo cada jornada.
 

@@ -1,0 +1,70 @@
+---
+title: Cómo trabajamos en el RAI Lab
+date: 2026-11-26
+tags: [metodologia, participacion, aprendizaje, ferias]
+nivel: publico
+---
+# Cómo trabajamos en el RAI Lab
+
+El RAI Lab lo mueven sus propios estudiantes. No hay notas ni sueldo, así que lo que más escasea no es la plata ni las herramientas: es la **motivación**. Este documento ordena el trabajo para que cada integrante, sepa lo que sepa, termine algo que funciona, se vea y pueda mostrar con orgullo.
+
+## 1. Filosofía
+1. **Andamiaje.** Quien coordina un proyecto deja hecho el esqueleto: la arquitectura, los ADR, las especificaciones, las pruebas automáticas y los diagramas. Los demás construyen piezas dentro de ese esqueleto. Así nadie parte de una hoja en blanco y nadie rompe lo de otro.
+2. **Cada uno es dueño de algo.** Se elige un componente y uno se «casa» con él hasta terminarlo. Lleva su nombre en el README del proyecto y es quien lo explica en las ferias.
+3. **Primero se planea, después se construye.** Ninguna pieza parte sin especificación y sin saber cómo se comprueba que está lista ([plan de trabajo](https://github.com/railab-usach/inmoov-cabeza/blob/main/docs/plan-de-trabajo.md)).
+4. **Victorias cortas.** Una tarea del lab dura una tarde, no un semestre. Cada tarea termina con algo que se ve: una foto, una medición, un servo que se mueve.
+5. **Las mejores herramientas gratis.** Antes de usar algo, se compara con las alternativas y se anota la elección en un ADR. Que algo ya esté hecho no basta para mantenerlo.
+6. **Si no está escrito, no existe.** Lo que se aprende va a la bitácora del repo, para quien llegue después y para que el InMoov lo pueda contar (sección 6).
+
+## 2. Tres niveles de participación
+Uno parte donde se sienta cómodo y sube cuando quiere. Nadie queda fuera por saber poco.
+
+| Nivel | Qué haces | Qué recibes hecho | Ejemplo | Lo que aprendes |
+|---|---|---|---|---|
+| **1 · Misión de lab** ★ | Vas al lab y sigues una guía paso a paso: montar, conectar, verificar y dejar una foto | Diagrama, lista de materiales, pasos y cómo verificar | Montar el bus de servos ([misión M-01](https://github.com/railab-usach/inmoov-cabeza/blob/main/docs/misiones/M-01-bus-de-servos.md)) | Electrónica práctica, seguridad, orden |
+| **2 · Prueba** ★★ | Corres un script que ya existe, mides y llenas una tabla | Script, tabla vacía y criterio de éxito | Medir 8 modelos de lenguaje en el servidor (E0-4) | Medir con método, Linux, comparar opciones |
+| **3 · Componente** ★★★ | Programas una pieza dentro de bordes ya definidos | Especificación, interfaz (mensajes de entrada y salida), pruebas que debe pasar y CI | Firmware que recibe poses por serial y mueve 20 servos (E1-1) | Diseño, programación, trabajo con pruebas |
+
+Un componente está **terminado** cuando pasa sus pruebas, el CI está en verde, tiene su página en la documentación y su dueño lo puede explicar en dos minutos.
+
+## 3. Cómo se arma una misión de lab
+Las misiones las escribe quien coordina, con la [plantilla](https://github.com/railab-usach/inmoov-cabeza/blob/main/docs/misiones/README.md). Cada una trae:
+- **Objetivo** en una frase y **por qué importa** para el proyecto.
+- **Materiales** con su ubicación en el lab.
+- **Diagrama** de conexiones.
+- **Pasos** numerados, uno por acción.
+- **Verificación:** cómo saber que quedó bien, con un comando o una medición, no «se ve bien».
+- **Qué hacer si falla**, y cuándo detenerse y avisar.
+- **Seguridad:** qué no tocar con la fuente enchufada.
+- **Entrega:** la foto o el dato que se sube al tema de Zulip de esa misión.
+
+## 4. Ritmo
+- **Zulip** para coordinar: un tema por misión o reto ([guía](guias/zulip.md)).
+- **Reunión corta** cada dos semanas por Discord, de 20 minutos: qué se terminó, qué se traba y qué misiones hay disponibles. No es para rendir cuentas.
+- **Reconocimiento:** cada cosa terminada se anuncia en Zulip con el nombre de quien la hizo y queda en la bitácora y en el README. Lo que se puede mostrar va a Instagram.
+
+## 5. Ferias y demostraciones
+Cada proyecto tiene un **kit de demo** en `docs/demo/`, y cualquiera del equipo lo puede presentar:
+- **Explicación de 30 segundos** para alguien que no sabe nada: qué hace y por qué es interesante.
+- **Explicación técnica de 3 minutos:** cómo funciona por dentro, con el diagrama.
+- **Preguntas frecuentes** con respuestas cortas.
+- **Lista de montaje** de la demo: qué llevar, cómo armarlo y cómo probarlo antes de que llegue la gente.
+- **Plan B** si algo falla en vivo (un video corto del proyecto funcionando).
+
+Un proyecto **va a feria** solo cuando su demo funciona tres veces seguidas sin tocar nada y al menos dos personas del equipo la saben explicar.
+
+## 6. El baúl de cada proyecto (lo que el InMoov lee)
+La meta es que el InMoov responda preguntas sobre los proyectos del lab, tanto a un visitante como a alguien técnico. Para eso lee la documentación de los repos. Cada repo usa la misma estructura:
+
+| Archivo | Para quién | Qué tiene |
+|---|---|---|
+| `README.md` | Todos | Qué es, en un párrafo, y quiénes participan |
+| `docs/explicacion-simple.md` | Visitantes | El proyecto sin jerga, con analogías |
+| `docs/demo/` | Quien presenta | El kit de demo de la sección 5 |
+| `docs/preguntas-frecuentes.md` | Visitantes y técnicos | Preguntas reales que hicieron en ferias |
+| `docs/decisiones/` | Técnicos | Los ADR: qué se eligió y por qué |
+| `docs/bitacora/` | Técnicos | Lo medido y aprendido, con fecha |
+
+Cada archivo lleva en su encabezado `nivel: publico` o `nivel: tecnico`, para que el InMoov elija cómo responder según quién pregunta. Nunca van claves, IPs ni datos personales: todo lo que esté en el baúl puede terminar dicho en voz alta en una feria.
+
+Up: [documentación](README.md)
