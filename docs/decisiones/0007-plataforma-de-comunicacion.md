@@ -1,12 +1,12 @@
 ---
 title: "ADR-0007: plataforma de comunicación del lab"
 date: 2026-11-24
-estado: aceptada
+estado: pospuesta
 tags: [adr, comunicacion, herramientas]
 ---
 # ADR-0007: plataforma de comunicación del lab
 
-- **Estado:** aceptada (26 nov 2026). La decide Camilo sin pasar por la reunión, porque ya lo había conversado con el grupo; parte con el grupo del servidor y el resto se suma cuando quiera.
+- **Estado:** pospuesta (26 nov 2026, Camilo). Solo interesa si corre en el lab, en `hp-node-01`, y sin UPS un corte de luz lo deja caído. Se retoma cuando haya UPS; Zulip Cloud queda descartado por ahora.
 - **Propone:** Camilo (24 nov 2026)
 - **Validado por:** Camilo, coordinador (26 nov 2026). Se revisa con los criterios de «Cómo se valida».
 - **Evidencia:** planes y documentación consultados el 24 nov 2026: [Zulip](https://zulip.com/plans/), [límites del plan gratis de Slack](https://slack.com/help/articles/115002422943), [conector de Slack para Claude](https://claude.com/docs/connectors/slack), [conector de Slack para ChatGPT](https://help.openai.com/en/articles/12525822-chatgpt-connector-for-slack), [Mattermost](https://docs.mattermost.com/product-overview/editions-and-offerings.html).

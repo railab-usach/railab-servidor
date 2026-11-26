@@ -6,7 +6,7 @@ nivel: publico
 ---
 # Cómo trabajamos en el RAI Lab
 
-> **Estado: borrador para discutir con Vicente y el equipo.** Lo escribió un estudiante, no un profesor. Las ideas se contrastaron con la literatura de la sección 7, pero no se han probado en el lab.
+> **Estado: borrador para discutir con Vicente y el equipo.** Lo escribió un estudiante, no un profesor. Las ideas se contrastaron con la literatura de la sección 8, pero no se han probado en el lab.
 
 El RAI Lab lo mueven sus propios estudiantes. No hay notas ni sueldo, así que lo que más escasea no es la plata ni las herramientas: es la **motivación**. Este documento ordena el trabajo para que cada integrante, sepa lo que sepa, termine algo que funciona, se vea y pueda mostrar con orgullo.
 
@@ -43,14 +43,27 @@ Las misiones las escribe quien coordina, con la [plantilla](https://github.com/r
 - **Verificación:** cómo saber que quedó bien, con un comando o una medición, no «se ve bien».
 - **Qué hacer si falla**, y cuándo detenerse y avisar.
 - **Seguridad:** qué no tocar con la fuente enchufada.
-- **Entrega:** la foto o el dato que se sube al tema de Zulip de esa misión.
+- **Entrega:** la foto o el dato que se sube como comentario al issue de esa misión.
 
-## 4. Ritmo
-- **Zulip** para coordinar: un tema por misión o reto ([guía](guias/zulip.md)).
+## 4. Para nuestro tamaño (2026)
+Hoy el InMoov y el servidor los trabajan **dos personas que aprenden** (Emilio y Balter), **una que coordina** (Camilo) y el encargado del lab (Vicente). Con un equipo así, lo que funciona es esto:
+
+| Pieza | Qué es | Por qué para nosotros |
+|---|---|---|
+| **Aprendizaje cognitivo** como base | Camilo hace la primera vez y explica por qué, después lo hacen juntos y al final solos | Hay una gran diferencia de experiencia; con dos aprendices se puede acompañar a cada uno |
+| **Trabajo en pareja** | Emilio y Balter hacen misiones juntos: uno maneja (teclado o cautín) y el otro guía y revisa, y se turnan. Al principio maneja quien sabe menos | Balter recién parte con git y Emilio ya trabajó con ESP32 y PCA9685; así Emilio afianza enseñando y Balter no queda solo |
+| **Tablero kanban** en GitHub Projects | Cuatro columnas: por hacer, en curso, en revisión y listo, con **una tarea en curso por persona** | Es gratis y está junto al código; la regla de una tarea evita dejar diez cosas a medias |
+| **Revisión de 15 minutos** cada semana | Qué terminé, qué me traba y qué tomo ahora | Mantiene el ritmo sin quitar tiempo; en un lab voluntario, más reuniones desaniman |
+| **Demo interna al mes** | Cada uno muestra lo que hizo a Vicente y al grupo | Hace visible el avance y sirve de ensayo para las ferias |
+
+**Lo que no usamos y por qué:** Scrum pide roles fijos, sprints y varias reuniones por ciclo, y está pensado para equipos de 5 a 9 personas con jornada completa. VIP funciona con profesores y créditos de ramo, que el lab no tiene, aunque se toma de él que los antiguos guíen a los nuevos.
+
+## 5. Ritmo
+- **Coordinación:** el grupo de WhatsApp para avisos y un issue de GitHub por misión o reto, donde queda la discusión técnica. Zulip quedó en pausa hasta tener UPS ([guía](guias/zulip.md)).
 - **Reunión corta** cada dos semanas por Discord, de 20 minutos: qué se terminó, qué se traba y qué misiones hay disponibles. No es para rendir cuentas.
-- **Reconocimiento:** cada cosa terminada se anuncia en Zulip con el nombre de quien la hizo y queda en la bitácora y en el README. Lo que se puede mostrar va a Instagram.
+- **Reconocimiento:** cada cosa terminada se anuncia en el grupo con el nombre de quien la hizo y queda en la bitácora y en el README. Lo que se puede mostrar va a Instagram.
 
-## 5. Ferias y demostraciones
+## 6. Ferias y demostraciones
 Cada proyecto tiene un **kit de demo** en `docs/demo/`, y cualquiera del equipo lo puede presentar:
 - **Explicación de 30 segundos** para alguien que no sabe nada: qué hace y por qué es interesante.
 - **Explicación técnica de 3 minutos:** cómo funciona por dentro, con el diagrama.
@@ -60,7 +73,7 @@ Cada proyecto tiene un **kit de demo** en `docs/demo/`, y cualquiera del equipo 
 
 Un proyecto **va a feria** solo cuando su demo funciona tres veces seguidas sin tocar nada y al menos dos personas del equipo la saben explicar.
 
-## 6. El baúl de cada proyecto (lo que el InMoov lee)
+## 7. El baúl de cada proyecto (lo que el InMoov lee)
 La meta es que el InMoov responda preguntas sobre los proyectos del lab, tanto a un visitante como a alguien técnico. Para eso lee la documentación de los repos. Cada repo usa la misma estructura:
 
 | Archivo | Para quién | Qué tiene |
@@ -74,7 +87,7 @@ La meta es que el InMoov responda preguntas sobre los proyectos del lab, tanto a
 
 Cada archivo lleva en su encabezado `nivel: publico` o `nivel: tecnico`, para que el InMoov elija cómo responder según quién pregunta. Nunca van claves, IPs ni datos personales: todo lo que esté en el baúl puede terminar dicho en voz alta en una feria.
 
-## 7. En qué se basa
+## 8. En qué se basa
 | Idea de este documento | De dónde viene | Qué ajustó |
 |---|---|---|
 | Andamiaje y niveles | *Aprendizaje cognitivo* (Collins, Brown y Newman, 1989): modelar, guiar, andamiar y **retirar el andamio**, más articular y reflexionar | Se agregó el principio 7 (retirar el andamio) y la reflexión en la bitácora; una revisión de 2024 nota que en STEM suele faltar justamente eso ([SIGCSE](https://par.nsf.gov//servlets/purl/10491208)) |
